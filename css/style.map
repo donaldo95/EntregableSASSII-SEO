@@ -1,0 +1,20 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss",
+		"../scss/_main.scss",
+		"../scss/_estructura.scss",
+		"../scss/_response.scss",
+		"../scss/_fondos.scss"
+	],
+	"sourcesContent": [
+		"@import 'main';\r\n@import 'estructura';\r\n@import 'response';\r\n@import 'fondos';",
+		"*{\r\n    margin: 0;\r\n    padding: 0;\r\n    font-family: 'Bangers';\r\n}\r\n",
+		"#mainTitle {\r\n    text-align: center;\r\n    margin: 5%;\r\n    animation-name: slidein;\r\n    animation-duration: 3s;\r\n    text-shadow: 2px 2px 2px #000000;\r\n}\r\n\r\n.navbar-nav a:hover {\r\n    transform: scale(1.2);\r\n    font-weight: bold;\r\n}\r\n\r\n.prods img {\r\n    filter: blur(0);\r\n    animation-name: imgBlur;\r\n    animation-duration: 3s;\r\n    .prods img:hover {\r\n        border-radius: 15px;\r\n        transition: 1s;\r\n        cursor: pointer;\r\n        transform: scale(1.2);\r\n        outline: solid 2px black;\r\n      }\r\n  }\r\n\r\n  #services {\r\n    padding: 60px 50px;\r\n    margin: 10px;\r\n}\r\n\r\n  #contact {\r\n    padding: 60px 50px;\r\n  }\r\n\r\n  hr {\r\n    margin: 10px;\r\n    &solid {\r\n        border-top: 1px solid rgb(161, 161, 161);\r\n    }\r\n}",
+		"@font-face {\r\n    font-family:'Bangers' ;\r\n    src: url(../assets/fonts/Bangers.ttf);\r\n  }\r\n\r\n  @keyframes slidein {\r\n    from {\r\n      margin-left: 100%;\r\n      width: 300%\r\n    }\r\n  \r\n    to {\r\n      margin-left: 0%;\r\n      width: 100%;\r\n    }\r\n  }\r\n\r\n  @keyframes imgBlur {\r\n    from {filter: blur(4px);}\r\n    to {filter: blur(0);}\r\n  }",
+		"$colorGris: #f6f6f6;\r\n\r\nnav{\r\n    background-color: rgba($color: #c90000, $alpha: .3)\r\n  }\r\n\r\n.bg-grey {\r\n    background-color: #f6f6f6;\r\n  }\r\n\r\n#mainTitle {\r\n    color: rgb(255, 255, 255);\r\n}\r\n\r\nsection {\r\n    background-color: $colorGris;\r\n}"
+	],
+	"names": [],
+	"mappings": ";ACAA,AAAA,CAAC,CAAA;EACG,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,WAAW,EAAE,SAAS,GACzB;;;ACJD,AAAA,UAAU,CAAC;EACP,UAAU,EAAE,MAAM;EAClB,MAAM,EAAE,EAAE;EACV,cAAc,EAAE,OAAO;EACvB,kBAAkB,EAAE,EAAE;EACtB,WAAW,EAAE,mBAAmB,GACnC;;;AAED,AAAA,WAAW,CAAC,CAAC,AAAA,MAAM,CAAC;EAChB,SAAS,EAAE,UAAU;EACrB,WAAW,EAAE,IAAI,GACpB;;;AAED,AAAA,MAAM,CAAC,GAAG,CAAC;EACP,MAAM,EAAE,OAAO;EACf,cAAc,EAAE,OAAO;EACvB,kBAAkB,EAAE,EAAE,GAQvB;;EAXH,AAII,MAJE,CAAC,GAAG,CAIN,MAAM,CAAC,GAAG,AAAA,MAAM,CAAC;IACb,aAAa,EAAE,IAAI;IACnB,UAAU,EAAE,EAAE;IACd,MAAM,EAAE,OAAO;IACf,SAAS,EAAE,UAAU;IACrB,OAAO,EAAE,eAAe,GACzB;;;AAGL,AAAA,SAAS,CAAC;EACR,OAAO,EAAE,SAAS;EAClB,MAAM,EAAE,IAAI,GACf;;;AAEC,AAAA,QAAQ,CAAC;EACP,OAAO,EAAE,SAAS,GACnB;;;AAED,AAAA,EAAE,CAAC;EACD,MAAM,EAAE,IAAI,GAIf;;EAHI,AAAD,OAAM,CAAC;IACH,UAAU,EAAE,GAAG,CAAC,KAAK,CAAC,OAAkB,GAC3C;;ACvCL,UAAU;EACN,WAAW,EAAC,SAAU;EACtB,GAAG,EAAE,gCAAgC;;AAGvC,UAAU,CAAV,OAAU;EACR,IAAI;IACF,WAAW,EAAE,IAAI;IACjB,KAAK,EAAE,IACT;EAEA,EAAE;IACA,WAAW,EAAE,EAAE;IACf,KAAK,EAAE,IAAI;;AAIf,UAAU,CAAV,OAAU;EACR,IAAI;IAAE,MAAM,EAAE,SAAS;EACvB,EAAE;IAAE,MAAM,EAAE,OAAO;;;ACjBvB,AAAA,GAAG,CAAA;EACC,gBAAgB,EAAe,oBAAO,GACvC;;;AAEH,AAAA,QAAQ,CAAC;EACL,gBAAgB,EAAE,OAAO,GAC1B;;;AAEH,AAAA,UAAU,CAAC;EACP,KAAK,EAAE,KAAkB,GAC5B;;;AAED,AAAA,OAAO,CAAC;EACJ,gBAAgB,EAfR,OAAO,GAgBlB"
+}

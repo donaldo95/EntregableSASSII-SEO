@@ -1,0 +1,19 @@
+@mixin fondoColor {
+  background-color: #f6f6f6;
+}
+
+nav{
+    background-color: rgba($color: #c90000, $alpha: .3)
+  }
+
+.bg-grey {
+    @include fondoColor;
+  }
+
+#mainTitle {
+    color: rgb(255, 255, 255);
+}
+
+section {
+   @include fondoColor;
+} 

@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bangers';
+}
+
+#mainTitle {
+  text-align: center;
+  margin: 5%;
+  animation-name: slidein;
+  animation-duration: 3s;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+.navbar-nav a:hover {
+  transform: scale(1.2);
+  font-weight: bold;
+}
+
+.prods img {
+  filter: blur(0);
+  animation-name: imgBlur;
+  animation-duration: 3s;
+}
+
+.prods img .prods img:hover {
+  border-radius: 15px;
+  transition: 1s;
+  cursor: pointer;
+  transform: scale(1.2);
+  outline: solid 2px black;
+}
+
+.services, .contact, hr {
+  padding: 60px 50px;
+}
+
+.contact, hr {
+  margin: 10px;
+}
+
+hrsolid {
+  border-top: 1px solid #a1a1a1;
+}
+
+.logo_small {
+  width: 40%;
+  height: auto;
+}
+
+.titleServ {
+  text-align: center;
+}
+
+.ajusteImg {
+  max-width: auto;
+  max-height: 400px;
+}
+
+@font-face {
+  font-family: 'Bangers';
+  src: url(../assets/fonts/Bangers.ttf);
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes imgBlur {
+  from {
+    filter: blur(4px);
+  }
+  to {
+    filter: blur(0);
+  }
+}
+
+nav {
+  background-color: rgba(201, 0, 0, 0.3);
+}
+
+.bg-grey {
+  background-color: #f6f6f6;
+}
+
+#mainTitle {
+  color: white;
+}
+
+section {
+  background-color: #f6f6f6;
+}

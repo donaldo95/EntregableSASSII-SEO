@@ -1,0 +1,22 @@
+@font-face {
+    font-family:'Bangers' ;
+    src: url(../assets/fonts/Bangers.ttf);
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  @keyframes imgBlur {
+    from {filter: blur(4px);}
+    to {filter: blur(0);} 
+  }
+

@@ -1,0 +1,69 @@
+@mixin borde {
+  padding: 60px 50px;
+}
+
+@mixin imgSize {
+  max-width: auto;
+  max-height: 400px;
+}
+
+$estilo:(
+  centro: center,
+  escala: scale(1.2)
+);
+
+#mainTitle {
+    text-align: map-get($estilo, centro);
+    margin: 5%;
+    animation-name: slidein;
+    animation-duration: 3s;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.navbar-nav a:hover {
+    transform: map-get($estilo ,escala);
+    font-weight: bold;
+}
+
+.prods img {
+    filter: blur(0);
+    animation-name: imgBlur;
+    animation-duration: 3s;
+    .prods img:hover {
+        border-radius: 15px;
+        transition: 1s;
+        cursor: pointer;
+        transform: map-get($estilo ,escala);
+        outline: solid 2px black;
+      }
+  }
+
+.services {
+  @include borde;
+  
+}
+
+.contact {
+  @extend .services;
+  margin: 10px
+  }
+
+hr {
+   @extend .contact;
+  &solid {
+      border-top: 1px solid rgb(161, 161, 161);
+  }
+}
+
+.logo_small {
+  width: 40%;
+  height: auto;
+}
+
+.titleServ {
+  text-align: map-get($estilo, centro);
+}
+
+.ajusteImg {
+  @include imgSize;
+}
